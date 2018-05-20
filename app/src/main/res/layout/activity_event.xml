@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stphanie.game3.EventActivity">
+
+    <TextView
+        android:id="@+id/tv_questTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/quest1_title"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/img_npc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/npc_magic"
+        app:layout_constraintBottom_toTopOf="@+id/gl_hor_50"
+        app:layout_constraintTop_toBottomOf="@id/tv_questTitle" />
+
+    <TextView
+        android:id="@+id/tv_npcConversation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:text="@string/quest1_startConversation"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/gl_hor_50" />
+
+    <Button
+        android:id="@+id/bt_questOptionA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onOptionAClick"
+        android:text="@string/quest1_revenge"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_npcConversation"
+        app:layout_constraintRight_toLeftOf="@+id/gl_vert_80"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_reqOptionA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/quest1_reqA"
+        app:layout_constraintTop_toTopOf="@+id/bt_questOptionA"
+        app:layout_constraintLeft_toRightOf="@+id/gl_vert_80"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:id="@+id/bt_questOptionB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="onOptionBClick"
+        android:text="@string/quest1_help"
+        android:textSize="18dp"
+        app:layout_constraintRight_toLeftOf="@+id/gl_vert_80"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_questOptionA"/>
+
+    <TextView
+        android:id="@+id/tv_reqOptionB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/quest1_reqB"
+        app:layout_constraintTop_toTopOf="@+id/bt_questOptionB"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/bt_questOptionC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onLeaveClick"
+        android:text="@string/quest_leave"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_hor_50"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_vert_80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+</android.support.constraint.ConstraintLayout>

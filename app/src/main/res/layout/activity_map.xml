@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stphanie.game3.MapActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@null"
+        android:contentDescription="@string/img_event1"
+        android:onClick="onEvent1Click"
+        android:src="@drawable/blue_diamond" />
+
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_hor60"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/img_home"
+        android:onClick="onHomeClick"
+        app:layout_constraintTop_toBottomOf="@+id/guide_hor60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/blue_tower" />
+
+</android.support.constraint.ConstraintLayout>

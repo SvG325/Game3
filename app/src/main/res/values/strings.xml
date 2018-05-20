@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Game3</string>
+    <string name="img_event1">Event 1</string>
+    <string name="img_home">Player Home</string>
+    <string name="tv_title">Title</string>
+
+    <string name="quest1_title">A Taste Of Their Own Medicine</string>
+    <string name="quest1_startConversation">"\"Artie Phishal has gone too far this time! If he
+        keeps raising the herb prices soon I won't be able to treat anyone anymore. Can you help me?\""</string>
+    <string name="quest1_revenge">\"I could give him a taste of his own medicine for you.\"</string>
+    <string name="quest1_help">\"Don\'t worry, I\'ll get you those potions.\"</string>
+    <string name="quest1_reqA">Burn 10 herb patches and collect the remains as proof</string>
+    <string name="quest1_responseA">Good idea! That will teach him.</string>
+    <string name="quest1_reqB">Gather 10 bunches of Marigolds and bring them to me.</string>
+    <string name="quest1_responseB">Great! That would help a lot.</string>
+    <string name="quest_leave">Leave</string>
+    <string name="quest_accepted">Start</string>
+
+    <string name="quest_item1">Ashes</string>
+    <string name="quest_item2">Marigolds</string>
+
+    <string name="skill_name1">Force Blast</string>
+    <string name="skill_description1">A raw wave of force. Power: </string>
+    <string name="skill_name2">Fire Ball</string>
+    <string name="skill_description2">Throw fire at people. Power: </string>
+
+    <string name="bt_go">Go</string>
+    <string name="battle_start">You encounter %s</string>
+    <string name="battle_selectedSkillDescr">Selected skill description</string>
+    <string name="battle_dmgenemy">You hit %1$s with %2$s for %3$d damage. </string>
+    <string name="battle_dmgplayer">%1$s hits you for %2$d damage. </string>
+    <string name="battle_enemydies">%s dies. </string>
+
+    <string name="label_skill_alch">Alchemy Level: </string>
+    <string name="label_skill_elm">Elemental Level: </string>
+    <string name="label_skill_arc">Arcane Level: </string>
+    <string name="label_XX">XX</string>
+</resources>
